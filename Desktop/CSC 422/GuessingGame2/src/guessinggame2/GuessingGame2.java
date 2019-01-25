@@ -7,10 +7,9 @@ package guessinggame2;
 
 import java.util.Random;
 import java.util.Scanner;
-/**
- *
- * @author robnelson
- */
+
+
+
 public class GuessingGame2 {
 
     
