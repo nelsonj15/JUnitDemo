@@ -1,21 +1,40 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * CSC 422 Spring 2019 - Prj Week 1 GuessingGame
+ * Created by: Rob Nelson
+ * Creation Date: 01/22/19
+ * Revision Date: 01//19
  */
+
+
 package guessinggame;
 
-/**
- *
- * @author robnelson
- */
+import java.util.Random;
+import java.util.Scanner;
+
 public class GuessingGame {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        int answer;
+        int guess;
+        final int MAX = 20;
+
+        Scanner keyboard = new Scanner(System.in);
+        Random rand = new Random();
+
+        answer = rand.nextInt(MAX) + 1;
+        
+        System.out.print("Hello and welcome to Rob Nelson's Guessing Game!  \n" );
+
+        System.out.print("Guess a number between 1 and 20:  \n");
+        guess = keyboard.nextInt();
+
+
+        if (guess == answer) {
+            System.out.println("Awesome, you guessed the number 1st try! The number was: " + answer);
+        } else {
+            System.out.println("Sorry you got it wrong. Better luck next time. The number was: " + answer);
+        }
     }
-    
+
 }
