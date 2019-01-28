@@ -1,8 +1,8 @@
 /*
- * CSC 422 Spring 2019 - Prj Week 1 GuessingGame
+ * CSC 422 Spring 2019 - Prj Week 2 GuessingGame
  * Created by: Rob Nelson
- * Creation Date: 01/22/19
- * Revision Date: 01//19
+ * Creation Date: 01/27/19
+ * Revision Date: 01/27/19
  */
 
 
