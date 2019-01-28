@@ -15,26 +15,43 @@ public class GuessingGame {
 
     public static void main(String[] args) {
 
+            Scanner scan = new Scanner(System.in);
+        Random generator = new Random();
+        
+        final int MAX = 100;
         int answer;
         int guess;
-        final int MAX = 20;
-
-        Scanner keyboard = new Scanner(System.in);
-        Random rand = new Random();
-
-        answer = rand.nextInt(MAX) + 1;
+        String another = "y";
+        boolean flag = false;
+        boolean anotherFlag = true;
         
-        System.out.print("Hello and welcome to Rob Nelson's Guessing Game!  \n" );
-
-        System.out.print("Guess a number between 1 and 20:  \n");
-        guess = keyboard.nextInt();
-
-
-        if (guess == answer) {
-            System.out.println("Awesome, you guessed the number 1st try! The number was: " + answer);
-        } else {
-            System.out.println("Sorry you got it wrong. Better luck next time. The number was: " + answer);
-        }
+        while(anotherFlag){
+            answer = generator.nextInt(MAX) + 1;
+            
+            System.out.println("I'm thinkin of a number between 1 and " + MAX );
+            System.out.println("Can you guess what it is? \n");
+            flag = false;
+            while(!flag) {
+                guess = scan.nextInt();
+                
+                if(guess == answer){
+                    System.out.println("You guessed correctly");
+                    flag = true;
+                            
+                } else{
+                    System.out.println("That was wrong, try again.");
+                }
+            }
+        
+            System.out.println("Want to Play again?(y/n)");
+            another = scan.next();
+            
+            if(another.equalsIgnoreCase("y") == true){
+                anotherFlag = true;
+            } else{
+                anotherFlag = false;
+            }
     }
-
+    
+}
 }
