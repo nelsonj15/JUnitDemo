@@ -1,8 +1,8 @@
 /*
- * CSC 422 Spring 2019 - Prj Week 2 GuessingGameUnlimitiedAttemptsHighLow
+ * CSC 422 Spring 2019 - Prj Week 2 GuessingGameUnlimitiedAttemptsHighLowNumberOfTriesDisplayed
  * Created by: Rob Nelson
  * Creation Date: 01/27/19
- * Revision Date: 01/27/19
+ * Revision Date: 01/28/19
  */
 package guessinggame;
 
@@ -59,10 +59,9 @@ public class GuessingGame {
 
                 // Guess is correct !!
 
-               System.out.println("Correct, the number was " + number + ". You needed " + count + " times");
+                System.out.println("Correct, the number was " + number + ". You needed " + count + " times");
             }
         }
     }
 
 }
-
