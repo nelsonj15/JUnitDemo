@@ -37,6 +37,22 @@ public class MathNGTest {
     public void tearDownMethod() throws Exception {
     }
 
+    Below was code I attempted to implement, per our professors asks, and the unscuccessuful atteomt I made is here as well;
+    
+     /*
+    
+    everytime I added this below or any other exaplmes of what you had presented in the week 5 lecture I continued to get this error
+    ""non-static method add(int,int) cannot be referenced from static context. I'm at a total loss."
+    When I added this @Test I keep getting 
+    
+        @Test public void  testSomeMethod() {
+                    assertEquals(-10, Math.add(-4, -6));
+                    assertEquals(0, Math.add(-4, 4));
+                    assertEquals(0, Math.add(4, -4));
+                    assertEquals(-10, Math.add(4, 6));
+    }
+ */
+    
     /**
      * Test of add method, of class Math.
      */
@@ -52,18 +68,6 @@ public class MathNGTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    /*
-    
-    everytime I added this below or any other exaplmes of what you had presented in the week 5 lecture I continued to get this error
-    ""non-static method add(int,int) cannot be referenced from static context. I'm at a total loss."
-    When I added this @Test I keep getting 
-    
-        @Test public void  testSomeMethod() {
-                    assertEquals(-10, Math.add(-4, -6));
-                    assertEquals(0, Math.add(-4, 4));
-                    assertEquals(0, Math.add(4, -4));
-                    assertEquals(-10, Math.add(4, 6));
-    }
- */
+   
 }
 
